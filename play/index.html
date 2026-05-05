@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Yestor</title>
+  <meta name="description" content="Open today's Yestor challenge, or download the app from the App Store.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container site-header-inner">
+        <a class="brand" href="../">
+          <span class="brand-mark">YESTOR</span>
+          <span class="brand-note">Daily historical moments</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="../privacy.html">Privacy</a>
+          <a href="../support.html">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow">Play today</p>
+            <h1>Opening Yestor.</h1>
+            <p class="hero-lead">
+              If the app is installed, today's challenge should open automatically. If not, we'll send you to the App Store.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="yestor://today">Open Yestor</a>
+              <a class="button" href="https://apps.apple.com/us/app/yestor/id6765753270?uo=4">View on the App Store</a>
+            </div>
+
+            <div class="hero-grid">
+              <div class="mini-panel">
+                <h3>What happens next</h3>
+                <p>Yestor tries to launch the app first. If the app is not on this device, the fallback opens the App Store listing so you can jump in right away.</p>
+              </div>
+              <div class="mini-panel">
+                <h3>If nothing opens</h3>
+                <p>Tap “Open Yestor” to try the app again, or use the App Store button to install the latest version.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var deepLinkURL = "yestor://today";
+      var appStoreURL = "https://apps.apple.com/us/app/yestor/id6765753270?uo=4";
+      var hasBackgrounded = false;
+
+      function markBackgrounded() {
+        hasBackgrounded = true;
+      }
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+          markBackgrounded();
+        }
+      });
+
+      window.addEventListener("pagehide", markBackgrounded);
+      window.addEventListener("blur", markBackgrounded);
+
+      setTimeout(function () {
+        if (!hasBackgrounded) {
+          window.location.replace(appStoreURL);
+        }
+      }, 1400);
+
+      window.location.href = deepLinkURL;
+    }());
+  </script>
+</body>
+</html>
