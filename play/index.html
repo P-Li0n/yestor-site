@@ -1,128 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yestor Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for Yestor.">
+  <title>Open Yestor</title>
+  <meta name="description" content="Open today's Yestor challenge, or download the app from the App Store.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <div class="page">
     <header class="site-header">
       <div class="container site-header-inner">
-        <a class="brand" href="./">
+        <a class="brand" href="../">
           <span class="brand-mark">YESTOR</span>
-          <span class="brand-note">Privacy Policy</span>
+          <span class="brand-note">Daily historical moments</span>
         </a>
         <nav class="nav" aria-label="Primary">
-          <a href="./">Home</a>
-          <a href="./support.html">Support</a>
+          <a href="../privacy.html">Privacy</a>
+          <a href="../support.html">Support</a>
         </nav>
       </div>
     </header>
 
-    <main class="section">
-      <div class="container">
-        <div class="content-card">
-          <p class="eyebrow">Privacy</p>
-          <h1>Privacy Policy</h1>
-          <p class="meta">Last updated: May 5, 2026</p>
-          <p class="lede">This Privacy Policy explains what information Yestor collects, how it is used, and what choices players have.</p>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-card">
+            <p class="eyebrow">Play today</p>
+            <h1>Opening Yestor.</h1>
+            <p class="hero-lead">
+              If the app is installed, today's challenge should open automatically. If not, we'll send you to the App Store.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="yestor://today">Open Yestor</a>
+              <a class="button" href="https://apps.apple.com/us/app/yestor/id6765753270?uo=4">View on the App Store</a>
+            </div>
+
+            <div class="hero-grid">
+              <div class="mini-panel">
+                <h3>What happens next</h3>
+                <p>Yestor tries to launch the app first. If the app is not on this device, the fallback opens the App Store listing so you can jump in right away.</p>
+              </div>
+              <div class="mini-panel">
+                <h3>If nothing opens</h3>
+                <p>Tap “Open Yestor” to try the app again, or use the App Store button to install the latest version.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="content-card">
-          <h2>1. Overview</h2>
-          <p>Yestor is a daily guessing game. It stores gameplay progress and preferences on your device, loads daily moment content from a live public feed, and can optionally sync account progress and leaderboard data so players can restore their game across devices and reinstalls.</p>
-
-          <hr>
-
-          <h2>2. Information stored on your device</h2>
-          <p>Yestor stores certain information locally on your device to make the app work properly and preserve your progress. This may include:</p>
-          <ul>
-            <li>your completed moments and scores</li>
-            <li>your streaks, unlockables, and app icon selections</li>
-            <li>your appearance settings and reminder preferences</li>
-            <li>a locally generated player identifier</li>
-            <li>your leaderboard display name, if you choose or keep one</li>
-            <li>a cached copy of the live daily moment feed</li>
-            <li>a locally stored sign-in session, if you choose to use account sync</li>
-          </ul>
-
-          <hr>
-
-          <h2>3. Information sent off your device</h2>
-          <p>Yestor may connect to third-party services to load content and support sync, sharing, and leaderboard features.</p>
-          <ul>
-            <li><strong>Daily content feed:</strong> Yestor fetches daily moment data from a publicly published Google Sheets CSV feed.</li>
-            <li><strong>Shared leaderboards:</strong> if shared leaderboards are enabled in the app build and you complete moments, Yestor may send your leaderboard profile to Supabase. This profile can include your player identifier, display name, completed moments, points, streaks, exact guesses, and leaderboard-related totals.</li>
-            <li><strong>Account sync:</strong> if you choose Sign in with Apple, Yestor uses Apple authentication together with Supabase to sync your progress. Synced account data can include your sign-in email address provided through Apple, your progress history, unlock dates, leaderboard player identifier and display name, and your selected app icon.</li>
-            <li><strong>Game Center:</strong> if you are signed in to Game Center on your device, Yestor may submit selected stats such as Total Points and Longest Streak to Apple's Game Center services.</li>
-            <li><strong>Sharing:</strong> if you choose to share a result, Yestor passes the share text and link you selected into Apple's system share sheet and the destination app or service you choose.</li>
-            <li><strong>Images and source links:</strong> moment photos and related links may load from external URLs included in the editorial feed.</li>
-          </ul>
-
-          <hr>
-
-          <h2>4. Public leaderboard information</h2>
-          <p>If your results are synced to the shared leaderboard, your chosen name, or the auto-generated fallback name assigned by the app, may be visible to other players alongside your scores, streaks, and ranks. Yestor does not require account registration to appear on the leaderboard.</p>
-
-          <hr>
-
-          <h2>5. Feedback and request emails</h2>
-          <p>If you choose to send feedback or request a moment by email, your email client will send the information you include to <a href="mailto:yestor.app@outlook.com">yestor.app@outlook.com</a>. That information is handled by your email provider and the mailbox provider used to receive those messages.</p>
-
-          <hr>
-
-          <h2>6. What Yestor does not do</h2>
-          <ul>
-            <li>Yestor does not currently require a user account or password to play.</li>
-            <li>Yestor does not currently sell personal information.</li>
-            <li>Yestor does not currently use third-party advertising SDKs.</li>
-            <li>Yestor does not currently use analytics or tracking SDKs for cross-app or cross-site tracking.</li>
-          </ul>
-
-          <hr>
-
-          <h2>7. Data retention</h2>
-          <p>Locally stored app data remains on your device unless it is deleted, reset, or removed when the app is uninstalled. If you use Sign in with Apple, synced account data and leaderboard records stored in the backend may remain there until they are updated or removed. If you delete your account in the app, Yestor removes the synced account records it controls, along with associated leaderboard profile data.</p>
-
-          <hr>
-
-          <h2>8. Your choices</h2>
-          <ul>
-            <li>You may play Yestor without signing in.</li>
-            <li>You may use Sign in with Apple to sync progress across devices and reinstalls, or sign out later from within the app.</li>
-            <li>You may delete your synced Yestor account from within the app settings.</li>
-            <li>You may keep the app’s auto-generated leaderboard name instead of choosing a custom one.</li>
-            <li>You may update your leaderboard display name from within the app settings.</li>
-            <li>You may turn daily reminders on or off and choose a reminder time in the app.</li>
-            <li>You may choose whether to share a result and which destination app or service to use.</li>
-            <li>You may choose not to send feedback or request emails.</li>
-          </ul>
-
-          <hr>
-
-          <h2>9. Contact</h2>
-          <p>If you have privacy questions or want help related to your data, including synced account data, contact <a href="mailto:yestor.app@outlook.com?subject=Yestor%20Privacy%20Question">yestor.app@outlook.com</a>.</p>
-        </div>
-      </div>
+      </section>
     </main>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <div>Yestor</div>
-        <div class="footer-links">
-          <a href="./">Home</a>
-          <a href="./support.html">Support</a>
-          <a href="mailto:yestor.app@outlook.com">yestor.app@outlook.com</a>
-        </div>
-      </div>
-    </footer>
   </div>
+
+  <script>
+    (function () {
+      var deepLinkURL = "yestor://today";
+      var appStoreURL = "https://apps.apple.com/us/app/yestor/id6765753270?uo=4";
+      var hasBackgrounded = false;
+
+      function markBackgrounded() {
+        hasBackgrounded = true;
+      }
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+          markBackgrounded();
+        }
+      });
+
+      window.addEventListener("pagehide", markBackgrounded);
+      window.addEventListener("blur", markBackgrounded);
+
+      setTimeout(function () {
+        if (!hasBackgrounded) {
+          window.location.replace(appStoreURL);
+        }
+      }, 1400);
+
+      window.location.href = deepLinkURL;
+    }());
+  </script>
 </body>
 </html>
